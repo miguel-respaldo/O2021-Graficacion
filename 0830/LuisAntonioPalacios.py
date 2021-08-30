@@ -1,0 +1,1 @@
+print("Hola Mundo!!! (づ￣ 3￣)づ")
