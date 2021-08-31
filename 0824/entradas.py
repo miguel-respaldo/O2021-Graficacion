@@ -1,3 +1,4 @@
+
 entero = int(input("Escribe un entero: "))
 flotante = float(input("Escribe un flotante: "))
 cadena = input("Escribe una cadena: ")
