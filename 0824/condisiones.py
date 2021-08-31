@@ -1,3 +1,5 @@
+
+
 numero = eval(input("Escribe un número: "))
 
 if numero < 10:
