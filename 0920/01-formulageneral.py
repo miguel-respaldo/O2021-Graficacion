@@ -8,9 +8,8 @@ discriminante = b**2 - 4*a*c
 
 if discriminante < 0:
     print("Las raices son imaginarias")
-    img=1j
-    x1 = -b / (2 * a) + (math.sqrt(-discriminante) / (2 * a))*img
-    x2 = -b / (2 * a) - (math.sqrt(-discriminante) / (2 * a))*img
+    x1 = -b / (2 * a) + (math.sqrt(-discriminante) / (2 * a))*1j
+    x2 = -b / (2 * a) - (math.sqrt(-discriminante) / (2 * a))*1j
 elif discriminante == 0:
     print("Las raices son iguales")
     x1 = x2 = -b / (2 * a)
