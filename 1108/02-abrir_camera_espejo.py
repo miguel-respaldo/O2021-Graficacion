@@ -15,9 +15,9 @@ while True:
         break
 
     imagen_flip = cv.flip(imagen, 1)
-    #  0
-    #  1
-    # -1
+    #  0 de Cabeza
+    #  1 Espejo
+    # -1 de Cabeza espejo
 
     cv.imshow("Camara", imagen)
     cv.imshow("Camara Flip", imagen_flip)
