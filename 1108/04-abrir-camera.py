@@ -14,12 +14,14 @@ while True:
         print("No podemos capturar la imagen de la camara")
         break
 
-    imagen_flip = cv.flip(imagen, 0)
+    imagen_flip = cv.flip(imagen, 1)
+
+    grises = cv.cvtColor(imagen_flip, cv.COLOR_BGR2GRAY)
     #  0 de Cabeza
     #  1 Espejo
     # -1 de Cabeza espejo
 
-    cv.imshow("Camara", imagen)
+    cv.imshow("Camara", grises)
     cv.imshow("Camara Flip", imagen_flip)
 
     # Al oprimir ESC salimos del programa
