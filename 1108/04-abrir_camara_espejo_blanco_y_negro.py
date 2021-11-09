@@ -14,15 +14,16 @@ while True:
         print("No podemos capturar la imagen de la camara")
         break
 
-    grises = cv.cvtColor ( imagen, cv.COLOR_BGR2GRAY )
+    grises = cv.cvtColor(imagen, cv.COLOR_BGR2GRAY)
 
-    imagen_flip = cv.flip(imagen, 1)
+    cv.imshow("Camara", grises)
+
+    imagen_flip = cv.flip ( imagen, 1 )
     #  0 de Cabeza
     #  1 Espejo
     # -1 de Cabeza espejo
 
-    cv.imshow("Camara", imagen)
-    cv.imshow("Camara Flip", imagen_flip)
+    cv.imshow ( "Camara Flip", imagen_flip )
 
     # Al oprimir ESC salimos del programa
     if cv.waitKey(1) == 27:
